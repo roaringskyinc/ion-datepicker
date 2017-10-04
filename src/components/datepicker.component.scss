@@ -9,9 +9,10 @@ ionic2-datepicker{
     flex-direction: column;
     justify-content: space-between;
     .datepicker-header{
+      display: none !important;
       color:white;
       background-color: #009688;
-      display:flex;
+      // display:flex;
       flex-flow: column;
       height:$headerHeight;
       .date-header{
@@ -44,7 +45,8 @@ ionic2-datepicker{
 }
 
   .datepicker-calendar{
-    height:calc(100% - (#{$headerHeight} + #{$footerheight}));
+    // height:calc(100% - (#{$headerHeight} + #{$footerheight}));
+    height: 260px;
         .datepicker-controls{
           align-items: center;
           justify-content: space-between;
@@ -92,7 +94,8 @@ ionic2-datepicker{
   }
 
   .datepicker-footer{
-    display:flex;
+    // display:flex;
+    display: none !important;
     justify-content: space-between;
     height:$footerheight;
     button{
