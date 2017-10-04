@@ -28,6 +28,7 @@ export class DatePickerDirective {
       this.dateService.setCustomNls(val);
     }
   };
+  @Input() public color: string;
   @Input() public okText: string;
   @Input() public cancelText: string;
   @Input() public bodyClasses: Array<string>;
@@ -64,6 +65,7 @@ export class DatePickerDirective {
       ionCanceled: this.canceled,
       ionSelected: this.selected,
       date: this.value,
+      color: this.color,
       okText: this.okText,
       cancelText: this.cancelText,
       disabledDates: this.disabledDates,

@@ -36,11 +36,13 @@ import { DateService } from '../services/datepicker.service';
         <div class="row col datepicker-controls">
             <button (tap)="prevMonth()"
                 ion-button=""
+                [style.background-color]="config.color"
                 class="disable-hover button button-ios button-default button-default-ios">
                 <span class="button-inner">
                     <ion-icon name="arrow-back" role="img" class="icon icon-ios ion-ios-arrow-back" aria-label="arrow-back" ng-reflect-name="arrow-back"></ion-icon></span><div class="button-effect"></div></button>            {{getTempMonth()}} {{getTempYear()}}
             <button (tap)="nextMonth()"
                 ion-button=""
+                [style.background-color]="config.color"
                 class="disable-hover button button-ios button-default button-default-ios">
                 <span class="button-inner">
                     <ion-icon name="arrow-forward" role="img" class="icon icon-ios ion-ios-arrow-forward" aria-label="arrow-forward" ng-reflect-name="arrow-forward"></ion-icon></span><div class="button-effect"></div></button>
@@ -213,17 +215,16 @@ ionic2-datepicker .datepicker-calendar .calendar-wrapper .datepicker-mark {
   border-radius: 20px;
 }
 ionic2-datepicker .datepicker-calendar .calendar-wrapper .datepicker-selected {
-  background-color: #b6d9d6;
+  background-color: #d3d3d3;
   border-radius: 20px;
 }
 
 ionic2-datepicker .datepicker-calendar .calendar-wrapper .datepicker-temp {
-    background-color: #b6c2d9;
     border-radius: 20px;
 }
 
 ionic2-datepicker .datepicker-calendar .calendar-wrapper .datepicker-current {
-  color: #3caa9f;
+  color: #387ef5;
   border-radius: 20px;
 }
 ionic2-datepicker .datepicker-calendar .calendar-wrapper .datepicker-disabled {
